@@ -8,7 +8,9 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, './'),
-        filename: 'index.js'
+        filename: 'index.js',
+        library: 'evalMustacheLoader',
+        libraryTarget: 'umd'
     },
     module: {
         rules: [
